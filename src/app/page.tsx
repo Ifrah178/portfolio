@@ -192,7 +192,7 @@ export default function Portfolio() {
           </div>
           <div className="about-content">
             <div>
-              <img 
+              <Image 
                 src="/api/placeholder/400/400" 
                 alt="Profile" 
                 className="profile-image"
