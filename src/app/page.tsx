@@ -122,7 +122,6 @@ export default function Portfolio() {
             </button>
           </div>
 
-          {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="mobile-menu">
               {menuItems.map((item) => (
@@ -159,9 +158,7 @@ export default function Portfolio() {
             priority={true}
           />
             <p className="hero-description">
-              A passionate Aalimah with expertise in teaching Quran & Sunnah to kids & adults and i'm also web developer and designer with expertise in creating beautiful, 
-              functional, and user-friendly websites. Specializing in modern web technologies 
-              and creative design solutions.
+            "A passionate Aalimah with expertise in teaching Quran and Sunnah to both children and adults. I am also a web developer and designer, skilled in creating beautiful, functional, and user-friendly websites. I specialize in modern web technologies and innovative design solutions."
             </p>
             <div className="hero-buttons">
               <a 
@@ -191,25 +188,14 @@ export default function Portfolio() {
             <h2 className="section-title">About Me</h2>
           </div>
           <div className="about-content">
-            <div>
-              <Image 
-                src="/api/placeholder/400/400" 
-                alt="Profile" 
-                className="profile-image"
-              />
-            </div>
+            
             <div className="about-text">
               <p>
-                Alhamduliallah I am a dedicated Teacher with experience in Quran Learning.
-              </p>
+              Alhamdulillah, I am a dedicated teacher with a strong background in Quranic education, specializing in Tajweed, Tafseer, and Islamic studies. My passion for teaching extends to students of all ages, aiming to inspire a deep connection with the Quran and Sunnah.</p>
               <p>
-                Alhamdulillah I am a dedicated professional with experience in social media management, 
-                graphic design, video editing, and web development.
-              </p>
+              In addition to my Islamic teaching expertise, I have substantial experience in social media management, graphic design, video editing, and web development. My technical skills include proficiency in Java, JavaScript, TypeScript, HTML, and CSS, as well as experience with frameworks like React and Next.js.</p>
               <p>
-                Alhamdulillah With a solid foundation in programming languages like Java, 
-                JavaScript, TypeScript, HTML, and CSS.
-              </p>
+              I am committed to continuous learning, always seeking to expand my knowledge and enhance my skills. Whether it's creating impactful digital content or delivering enriching educational experiences, I strive to bring creativity and excellence to every project I undertake.</p>
               <p>
                 Passionate about continuous learning, I aim to contribute my diverse expertise in web 
                 development, design, and social media management.
@@ -276,7 +262,10 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="contact" className="contact-section">
+
+
+
+      {/* <section id="contact" className="contact-section">
         <div className="section-container">
           <div className="section-header">
             <h2 className="section-title">Contact Me</h2>
@@ -303,8 +292,8 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="contact-form">
+            </div> */}
+            {/* <div className="contact-form">
               <p className="contact-form-heading">Send me a message:</p>
               <form action="#" method="POST" className="form">
                 <input 
@@ -332,7 +321,73 @@ export default function Portfolio() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+<section id="contact" className="contact-section">
+  <div className="contact-container">
+    <div className="contact-header">
+      <h2 className="contact-title">Contact Me</h2>
+      <div className="contact-underline"></div>
+    </div>
+    <div className="contact-grid">
+      <div className="contact-info">
+        <h3 className="contact-subtitle">Get In Touch</h3>
+        <p className="contact-text">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+        </p>
+        <div className="contact-item">
+          <div className="contact-icon">📧</div>
+          <div className="contact-details">
+            <h4>Email</h4>
+            <a href="mailto:farooqiiafra@gmail.com" className="contact-link">
+              farooqiiafra@gmail.com
+            </a>
+          </div>
+        </div>
+        <div className="contact-item">
+          <div className="contact-icon">📱</div>
+          <div className="contact-details">
+            <h4>Phone</h4>
+            <a href="tel:+923313417127" className="contact-link">
+              +92 331 3417127
+            </a>
+          </div>
+        </div>
+        <div className="social-links">
+          <a href="https://github.com/Ifrah178" className="social-icon github">GH</a>
+          <a href="https://www.instagram.com/ifrah.farooqi" className="social-icon instagram">IG</a>
+        </div>
+      </div>
+
+
+
+
+
+<div className="contact-form">
+        <form className="space-y-6">
+          <div className="form-group">
+            <label className="form-label">Name</label>
+            <input type="text" className="form-input" />
+          </div>
+          <div className="form-group">
+            <label className="form-label">Email</label>
+            <input type="email" className="form-input" />
+          </div>
+          <div className="form-group">
+            <label className="form-label">Message</label>
+            <textarea className="form-textarea"></textarea>
+          </div>
+          <button type="submit" className="submit-button">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 }
